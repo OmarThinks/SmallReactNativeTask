@@ -30,7 +30,13 @@ function App() {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Text style={{fontSize: 30}}>Hello, World!</Text>
+          <Text
+            style={{
+              fontSize: 30,
+              color: isDarkMode ? 'white' : 'black',
+            }}>
+            Hello, World!
+          </Text>
         </View>
       </ScrollView>
     </SafeAreaView>
