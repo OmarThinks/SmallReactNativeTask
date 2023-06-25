@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 
-import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -26,12 +26,11 @@ function App() {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Header />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Text>Hello, World!</Text>
+          <Text style={{fontSize: 30}}>Hello, World!</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
